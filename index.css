@@ -1,0 +1,269 @@
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.8);
+  background-image: linear-gradient(
+      90deg,
+      rgb(209, 209, 209),
+      rgb(207, 207, 207)
+    ),
+    linear-gradient(
+      45deg,
+      rgb(177, 223, 206) 0%,
+      rgb(177, 223, 206) 46%,
+      rgb(147, 192, 214) 46%,
+      rgb(147, 192, 214) 56%,
+      rgb(117, 162, 222) 56%,
+      rgb(117, 162, 222) 61%,
+      rgb(86, 131, 229) 61%,
+      rgb(86, 131, 229) 64%,
+      rgb(56, 101, 237) 64%,
+      rgb(56, 101, 237) 82%,
+      rgb(26, 70, 245) 82%,
+      rgb(26, 70, 245) 100%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(177, 223, 206) 0%,
+      rgb(177, 223, 206) 46%,
+      rgb(147, 192, 214) 46%,
+      rgb(147, 192, 214) 56%,
+      rgb(117, 162, 222) 56%,
+      rgb(117, 162, 222) 61%,
+      rgb(86, 131, 229) 61%,
+      rgb(86, 131, 229) 64%,
+      rgb(56, 101, 237) 64%,
+      rgb(56, 101, 237) 82%,
+      rgb(26, 70, 245) 82%,
+      rgb(26, 70, 245) 100%
+    );
+  background-blend-mode: overlay, overlay, normal;
+}
+
+.top {
+  width: 10%;
+  height: 100%;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(
+      45deg,
+      rgba(254, 246, 210, 0.53) 0%,
+      rgba(254, 246, 210, 0.53) 14.286%,
+      rgba(221, 240, 216, 0.53) 14.286%,
+      rgba(221, 240, 216, 0.53) 28.572%,
+      rgba(188, 233, 223, 0.53) 28.572%,
+      rgba(188, 233, 223, 0.53) 42.858%,
+      rgba(156, 227, 229, 0.53) 42.858%,
+      rgba(156, 227, 229, 0.53) 57.144%,
+      rgba(123, 220, 235, 0.53) 57.144%,
+      rgba(123, 220, 235, 0.53) 71.42999999999999%,
+      rgba(90, 214, 242, 0.53) 71.43%,
+      rgba(90, 214, 242, 0.53) 85.71600000000001%,
+      rgba(57, 207, 248, 0.53) 85.716%,
+      rgba(57, 207, 248, 0.53) 100.002%
+    ),
+    linear-gradient(
+      135deg,
+      rgb(246, 99, 200) 0%,
+      rgb(246, 99, 200) 12.5%,
+      rgb(223, 98, 196) 12.5%,
+      rgb(223, 98, 196) 25%,
+      rgb(199, 97, 192) 25%,
+      rgb(199, 97, 192) 37.5%,
+      rgb(176, 96, 188) 37.5%,
+      rgb(176, 96, 188) 50%,
+      rgb(152, 95, 184) 50%,
+      rgb(152, 95, 184) 62.5%,
+      rgb(129, 94, 180) 62.5%,
+      rgb(129, 94, 180) 75%,
+      rgb(105, 93, 176) 75%,
+      rgb(105, 93, 176) 87.5%,
+      rgb(82, 92, 172) 87.5%,
+      rgb(82, 92, 172) 100%
+    );
+  color: white;
+}
+
+.top h1 {
+  margin: 0;
+  font-weight: 600;
+}
+
+.pic {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.pic img {
+  width: 80%;
+  height: 100%;
+  border-radius: 1.5em;
+  margin: 10px 10px;
+  border: 2px solid black;
+  transition: transform 0.3s ease;
+}
+
+.pic img:hover {
+  transform: scale(1.1);
+  box-shadow: 1px0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.entire {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  text-align: center;
+  background-image: linear-gradient(90deg, rgb(15, 15, 15), rgb(119, 119, 119)),
+    linear-gradient(
+      67.5deg,
+      rgb(61, 40, 216) 0%,
+      rgb(61, 40, 216) 19%,
+      rgb(55, 42, 182) 19%,
+      rgb(55, 42, 182) 27%,
+      rgb(49, 44, 147) 27%,
+      rgb(49, 44, 147) 37%,
+      rgb(42, 46, 113) 37%,
+      rgb(42, 46, 113) 48%,
+      rgb(36, 48, 78) 48%,
+      rgb(36, 48, 78) 73%,
+      rgb(30, 50, 44) 73%,
+      rgb(30, 50, 44) 100%
+    ),
+    linear-gradient(
+      0deg,
+      rgb(61, 40, 216) 0%,
+      rgb(61, 40, 216) 19%,
+      rgb(55, 42, 182) 19%,
+      rgb(55, 42, 182) 27%,
+      rgb(49, 44, 147) 27%,
+      rgb(49, 44, 147) 37%,
+      rgb(42, 46, 113) 37%,
+      rgb(42, 46, 113) 48%,
+      rgb(36, 48, 78) 48%,
+      rgb(36, 48, 78) 73%,
+      rgb(30, 50, 44) 73%,
+      rgb(30, 50, 44) 100%
+    ),
+    linear-gradient(
+      22.5deg,
+      rgb(61, 40, 216) 0%,
+      rgb(61, 40, 216) 19%,
+      rgb(55, 42, 182) 19%,
+      rgb(55, 42, 182) 27%,
+      rgb(49, 44, 147) 27%,
+      rgb(49, 44, 147) 37%,
+      rgb(42, 46, 113) 37%,
+      rgb(42, 46, 113) 48%,
+      rgb(36, 48, 78) 48%,
+      rgb(36, 48, 78) 73%,
+      rgb(30, 50, 44) 73%,
+      rgb(30, 50, 44) 100%
+    );
+  background-blend-mode: overlay, overlay, overlay, normal;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.entire h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.entire p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+#quote {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#author {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#btn {
+  padding: 10px 20px;
+  background: #ff4e50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#btn:hover {
+  background: #e03a3e;
+}
+
+footer {
+  margin-top: 20px;
+  color: white;
+}
+
+footer p {
+  margin: 0;
+}
+.containerss {
+  text-align: center;
+  /* background: rgba(255, 255, 255, 0.9);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1); */
+}
+
+.typing-effect {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #333;
+  border-right: 0.1em solid #333;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.typing-effect::after {
+  content: "|";
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
